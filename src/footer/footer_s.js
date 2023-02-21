@@ -14,6 +14,5 @@ export const logo = styled.h1`
   display: flex;
   align-items: flex-end;
   text-transform: uppercase;
-
   color: rgba(0, 0, 0, 0.8);
 `;
