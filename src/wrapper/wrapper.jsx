@@ -10,6 +10,7 @@ function Wrapper() {
       <Header className="header"></Header>
       <Main className="main"></Main>
       <Footer className="footer"> </Footer>
+      
     </S.wrapper>
   );
 }

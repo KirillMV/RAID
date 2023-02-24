@@ -1,6 +1,7 @@
 import React from "react";
 import Wrapper from "./wrapper/wrapper";
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import { AppRoutes } from "./wrapper/routes";
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -12,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-  return <Wrapper />;
+  return <AppRoutes/>;
 }
 
 export default App;

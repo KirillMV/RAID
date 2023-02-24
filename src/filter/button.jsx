@@ -2,9 +2,16 @@ import React from "react";
 import * as S from './button_s'
 import Combobox from "./combobox";
 import { useState } from "react";
+import { useEffect } from "react";
 
-function Button() {
+
+function Button(props) {
   let [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+   ;
+  },[]);
+
   function filterMenu() {
     setVisible(false);
   }
@@ -18,11 +25,12 @@ function Button() {
         <div>
           <Combobox />
           <S.inputBox className="input">
-            <S.input type="number" min={0} placeholder= "от"  />
-            <S.input type="number" min={0} placeholder= "до" />
+            <S.input className="from" type="number" min={0} placeholder= "от"  />
+            <S.input className="to" type="number" min={0} placeholder= "до" />
           </S.inputBox>
-          <S.buttonSearch>Подобрать</S.buttonSearch>
+          <S.buttonSearch onClick={props.getFilter}>Подобрать</S.buttonSearch>
         </div>
+
       )}
     </React.Fragment>
   );
