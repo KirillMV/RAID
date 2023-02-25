@@ -48,6 +48,7 @@ function setNumbers(e){
           </S.inputBox>
           <S.buttonSearch onClick={props.getFilter}>Подобрать</S.buttonSearch>
         </div>
+        
 
       )}
     </React.Fragment>
