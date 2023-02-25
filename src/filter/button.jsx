@@ -44,7 +44,7 @@ function setNumbers(e){
           <Combobox />
           <S.inputBox className="input">
             <S.input className="from" type="text" min={0} placeholder= "от" onInput={setNumbers} />
-            <S.input className="to" type="text" min={0} placeholder= "до" />
+            <S.input className="to" type="text" min={0} placeholder= "до" onInput={setNumbers}/>
           </S.inputBox>
           <S.buttonSearch onClick={props.getFilter}>Подобрать</S.buttonSearch>
         </div>
