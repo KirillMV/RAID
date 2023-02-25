@@ -7,6 +7,24 @@ import { useEffect } from "react";
 
 function Button(props) {
   let [visible, setVisible] = useState(true);
+ let numbers = ['1','2','3','4','5','6','7','8','9','0']
+function setNumbers(e){
+ e.target.value = e.target.value.split('').filter((el)=>{
+  let flag = false;
+  for(let i =0;i<numbers.length;i++){
+    
+    if(el === numbers[i]){
+      flag = true;
+      
+    }
+  }
+  if(flag){
+   
+    return el
+  }
+}).join('')
+
+}
 
   useEffect(() => {
    ;
@@ -25,8 +43,8 @@ function Button(props) {
         <div>
           <Combobox />
           <S.inputBox className="input">
-            <S.input className="from" type="number" min={0} placeholder= "от"  />
-            <S.input className="to" type="number" min={0} placeholder= "до" />
+            <S.input className="from" type="text" min={0} placeholder= "от" onInput={setNumbers} />
+            <S.input className="to" type="text" min={0} placeholder= "до" />
           </S.inputBox>
           <S.buttonSearch onClick={props.getFilter}>Подобрать</S.buttonSearch>
         </div>
