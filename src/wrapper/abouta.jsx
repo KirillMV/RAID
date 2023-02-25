@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AboutaItem from "./about_item";
 
 export const Abouta = () => {
@@ -31,7 +32,11 @@ export const Abouta = () => {
 
   return (
     <div>
+      <div>
       <h1>SKYRENT</h1>
+      <Link to={'/'}><h1>назад</h1></Link>
+      </div>
+      
       {about}
       <button>Показать контактную информацию</button>
     </div>

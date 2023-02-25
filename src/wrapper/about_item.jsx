@@ -11,8 +11,8 @@ function AboutaItem(props){
             <p>{`${props.description}`}</p>
             <img src={props.picture_url} alt="" />
 <div>
-    {props.features_on.map(el=><p key={el}>+{el}</p>)}
-    {props.features_off.map(el=><p key={el}>-{el}</p>)}
+    {props.features_on.map(el=><p key={el}>✓{el}</p>)}
+    {props.features_off.map(el=><p key={el}>×{el}</p>)}
 </div>
 
 

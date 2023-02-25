@@ -10,6 +10,7 @@ function Combobox() {
   function setCity(e) {
     console.log(e.target.textContent);
   document.querySelector('.city_country').textContent = e.target.textContent
+  setVisible(false)
 
   }
   useEffect(() => {

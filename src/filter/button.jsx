@@ -8,6 +8,7 @@ import { useEffect } from "react";
 function Button(props) {
   let [visible, setVisible] = useState(true);
  let numbers = ['1','2','3','4','5','6','7','8','9','0']
+
 function setNumbers(e){
  e.target.value = e.target.value.split('').filter((el)=>{
   let flag = false;
@@ -33,6 +34,7 @@ function setNumbers(e){
   function filterMenu() {
     setVisible(false);
   }
+  
   return (
     <React.Fragment>
       {visible ? (
