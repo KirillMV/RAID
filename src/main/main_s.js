@@ -35,3 +35,6 @@ justify-content:center;
   border:none;
   color: #000000;
 `;
+
+export const centerBlock = styled.div`
+margin-top:50px;`

@@ -5,8 +5,10 @@ import { useState } from "react";
 import { useEffect } from "react";
 import TapeItem from "./tape";
 
+
 function Main() {
   let [appart, setAppart] = useState("");
+  let [filterCounter,setFilterCounter] = useState()
   useEffect(() => {
     fetch("https://pythonistic.pythonanywhere.com/places/")
       .then((response) => response.json())
@@ -38,11 +40,11 @@ function Main() {
     ) {
       nightCity = "";
     }
-    let URL = `https://pythonistic.pythonanywhere.com/places/?city=${nightCity}&from=${
+    let Url = `https://pythonistic.pythonanywhere.com/places/?city=${nightCity}&from=${
       document.querySelector(".from").value
     }&to=${document.querySelector(".to").value}`;
   
-    fetch(URL)
+    fetch(Url)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -59,6 +61,7 @@ function Main() {
             ></TapeItem>
           ))
         );
+        setFilterCounter(data.length)
         // console.log(data);
         // console.log(appart);
       });
@@ -73,9 +76,10 @@ function Main() {
 
       <Button getFilter={clicer} />
       {/* <S.button className="button">Подобрать недвижимость</S.button> */}
-
-      <div className="centerBlock"> {appart} </div>
+{Boolean(filterCounter) && <p>Найдено: {filterCounter}</p>}
+      <S.centerBlock className="centerBlock"> {appart} </S.centerBlock>
     </div>
+    
   );
 }
 

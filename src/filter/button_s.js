@@ -55,3 +55,7 @@ export const buttonHome = styled.button`
 
   margin-top: 35px;
 `;
+
+
+export const funcBox = styled.div`
+padding:29px 22px;`

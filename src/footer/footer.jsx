@@ -3,7 +3,8 @@ import * as S from "./footer_s";
 const Footer = () => {
   return (
     <footer>
-      <S.logo h1 className="logo"></S.logo>
+      <S.logo>skyrent</S.logo>
+      <S.year>2023</S.year>
     </footer>
   );
 };

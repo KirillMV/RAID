@@ -34,7 +34,7 @@ function setNumbers(e){
   function filterMenu() {
     setVisible(false);
   }
-  
+
   return (
     <React.Fragment>
       {visible ? (
@@ -42,14 +42,14 @@ function setNumbers(e){
           Подобрать недвижемость
         </S.buttonHome>
       ) : (
-        <div>
+        <S.funcBox>
           <Combobox />
           <S.inputBox className="input">
             <S.input className="from" type="text" min={0} placeholder= "от" onInput={setNumbers} />
             <S.input className="to" type="text" min={0} placeholder= "до" onInput={setNumbers}/>
           </S.inputBox>
           <S.buttonSearch onClick={props.getFilter}>Подобрать</S.buttonSearch>
-        </div>
+        </S.funcBox>
         
 
       )}
