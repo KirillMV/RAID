@@ -54,7 +54,7 @@ export const Abouta = () => {
 
       {about}
       {visible ? (
-        <div>{square}</div>
+        <S.ramochka>{square}</S.ramochka>
       ) : (
         <S.infoButton
           onClick={() => {

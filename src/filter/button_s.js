@@ -3,10 +3,9 @@ import styled from "styled-components";
 export const inputBox = styled.div`
   display: flex;
   flex-direction: row;
-  gap:20px;
-  margin-top:20px;
-
-  margin-bottom:25px;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 `;
 
 export const input = styled.input`
@@ -28,7 +27,6 @@ export const buttonSearch = styled.button`
   height: 49px;
   width: 323px;
   border-radius: 4px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -41,21 +39,18 @@ export const buttonHome = styled.button`
   height: 49px;
   background: #d9d9d9;
   border-radius: 4px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 17px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   color: #000000;
-
   margin-top: 35px;
 `;
 
-
 export const funcBox = styled.div`
-padding:29px 22px;`
+  padding: 29px 22px;
+`;

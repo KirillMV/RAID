@@ -17,7 +17,7 @@ function Combobox() {
     fetch("https://pythonistic.pythonanywhere.com/places/")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        console.log(data.map(el => el.city));
       setList(data.map(el=><S.cityTown key={el.pk} onClick={setCity}>{`${el.country}→${el.city}`}</S.cityTown>).slice(0, 6))
       });
   },[]);
