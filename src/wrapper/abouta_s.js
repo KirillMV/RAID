@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const vector = styled.p`
+export const vector = styled.img`
   width: 22px;
   height: 22px;
-  margin-top: 25px;
+  margin-top: 27px;
   color: #000000;
 `;
 export const header = styled.div`

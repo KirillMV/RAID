@@ -8,9 +8,7 @@ function Additional() {
      
       <S.header>
       <Link to={"/"}>
-        <S.vector>
-          ⬅
-          </S.vector>
+      <S.vector src="/img/Vector.svg" alt="ikkk" />
         </Link>
         <h1>SKYRENT</h1>
           {/* <img src="/img/Vector.svg" alt="ikkk" /> */}

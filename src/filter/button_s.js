@@ -9,6 +9,7 @@ export const inputBox = styled.div`
 `;
 
 export const input = styled.input`
+  padding-left: 18px;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
   box-sizing: border-box;
@@ -18,6 +19,14 @@ export const input = styled.input`
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+  &::placeholder {
+    font-family: "StratosSkyeng";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+    color: #d9d9d9;
   }
 `;
 

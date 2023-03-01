@@ -27,7 +27,7 @@ export const cityTown = styled.div`
   font-family: "Roboto";
 
   width: 322px;
-  height:48px;
+  height: 48px;
   border-top: 1px solid #dcdcdc;
   font-style: normal;
   font-weight: 400;
@@ -36,7 +36,6 @@ export const cityTown = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
   color: #000000;
 `;
@@ -47,10 +46,12 @@ export const city = styled.p`
 
 export const dropdown = styled.div`
   position: absolute;
-  width: 324px;
-  height: 296px;
+  width: 323px;
+  height: 294px;
   border: 1px solid #dcdcdc;
-  border-radius: 6px;
+  border-radius: 1px;
   background-color: white;
   border-top: none;
+  overflow: auto;
+  overflow-x:hidden;
 `;

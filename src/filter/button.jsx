@@ -45,8 +45,8 @@ function setNumbers(e){
         <S.funcBox>
           <Combobox />
           <S.inputBox className="input">
-            <S.input className="from" type="text" min={0} placeholder= "от" onInput={setNumbers} />
-            <S.input className="to" type="text" min={0} placeholder= "до" onInput={setNumbers}/>
+            <S.input className="from" type="text" min={0} placeholder= "Цена от" onInput={setNumbers} />
+            <S.input className="to" type="text" min={0} placeholder= "Цена до" onInput={setNumbers}/>
           </S.inputBox>
           <S.buttonSearch onClick={props.getFilter}>Подобрать</S.buttonSearch>
         </S.funcBox>
